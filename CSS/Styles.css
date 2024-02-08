@@ -1,0 +1,346 @@
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('/Home/CSS/Fonts/opensans-italic-variablefont_wdthwght-webfont.woff2') format('woff2'),
+         url('/Home/CSS/Fonts/opensans-variablefont_wdthwght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+:root{
+    --color-primary:#76c7c0;
+    --color-primary-darker:#62a29e;
+    --color-primary-darkest:#7f8c8c;
+    --color-accent:#e5655d;
+    --user-image-comment:75px;
+    --blog-img-maxwidth:50px;
+    --hr-height:3px;
+    --bs-bg-secondary:#b1b3b6;
+    --btn-accent-shadow:0 5px 1px -1px #983b32;
+    --btn-primary-shadow:0 5px 1px -1px rgb(9, 60, 135);
+    --btn-primary-darker-shadow:0 5px 1px -1px #426c69;
+    --user-img-border:2px solid #000;
+
+    
+}
+
+/******** Typography ********/
+
+body{
+    font-family: 'open-sansregular', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+}
+
+.text-accent{
+    color: var(--color-accent);
+}
+
+.text-color-primary{
+    color: var(--color-primary);
+}
+
+.color-primary-i{
+    color: var(--color-primary);
+    
+}
+
+
+/*******************/
+
+.bg-accent{
+    background-color: var(--color-accent) !important;
+}
+
+.bg-color-darkest{
+    background-color: var(--color-primary-darkest);
+}
+
+.hr-h{
+    border-top-width: var(--hr-height);
+}
+
+.color-primary{
+    background-color: var(--color-primary) !important;
+    
+}
+
+/******** NavBar ********/
+
+.nav-item .nav-link {
+    color: white;
+}
+.nav-item .nav-link:hover {
+    background-color: var(--color-accent);
+    box-shadow: var(--btn-accent-shadow);
+    color: white;
+}
+
+.nav-item .current{
+    background-color: var(--color-primary-darker);
+    box-shadow: var(--btn-primary-darker-shadow);
+    color: white;
+}
+.nav-item .current:hover{
+    background-color: var(--color-primary-darker);
+    
+}
+
+.navbar .dropdown-menu>li:hover{
+    background-color: var(--color-primary);
+}
+
+.navbar-brand-container{
+    width: 200px;
+    margin-right: 5;
+}
+
+.navbar-nav .dropdown-toggle{
+    color: white;
+}
+
+@media screen and (max-width:992px){
+    .navbar-nav li{
+        margin-bottom:10px  ;
+    }
+    .navbar-nav a{
+        padding: 5px 9px;
+    }
+    
+}
+
+
+/*******************/
+
+/******** carousel ********/
+
+.carousel-caption{
+    top:40%;
+}
+
+.carousel-title{    
+    
+    background-color: var(--color-accent);
+    max-width: fit-content;
+}
+
+.carousel-control:hover{
+    background-color: var(--color-accent);
+}
+
+.carousel-caption-bg{
+    background-color: #3f4646;
+    max-width: 55%;
+    min-width: 35ch;
+
+}
+
+/*******************/
+
+/******** CardGroup ********/
+
+.card-btn{
+    width: 75%;
+}
+
+.card-icon{
+    width: 15%;
+}
+
+.card-suggestions:hover .card-icon-color{
+    fill: var(--color-accent);
+}
+.card-suggestions:hover .btn{
+    background-color: var(--color-accent);
+    border-color: var(--color-accent);
+    box-shadow: var(--btn-accent-shadow);
+}
+
+.card-list-icons{
+    fill: var(--color-accent);
+}
+
+.card-link{
+    color: var(--color-accent);
+}
+
+.btnout{
+    padding: 0 15%;
+}
+
+.card a{
+    text-decoration: none;
+}
+
+
+/************/
+
+.page-link-arrows{
+    width: 30px;
+    background-color: aqua;
+    box-shadow:var(--btn-primary-darker-shadow) ;
+}
+.page-link-arrows:hover{
+    background-color: var(--color-accent) !important;
+    box-shadow: var(--btn-accent-shadow);
+}
+
+
+/********** footer **********/
+footer{
+    background-color: var(--color-primary);
+}
+
+footer a {
+    text-decoration: none;
+}
+
+.footer-end{
+    background-color: var(--color-primary-darker);
+}
+.footer-img{
+    width: 75%;
+}
+
+footer .card{
+    background-color: var(--color-primary);
+    color: white;
+}
+
+footer a{
+    color: white;
+}
+footer a:hover{
+    color: black;
+}
+
+.footer-end a{
+    color: rgba(33, 37, 41, 0.75);
+}
+
+.footer-end a:hover{
+    color: #fff;
+}
+
+/*********** ***********/
+.shadow-bottom {
+    box-shadow: 0 5px 1px -1px #00000030;
+  }
+.btn-accent-shadow-bottom {
+    box-shadow: var(--btn-accent-shadow);
+  }
+
+.btn-primary-shadow-bottom{
+    box-shadow: var(--btn-primary-shadow);
+}
+
+.shadow-top {
+    box-shadow: 0 -5px 1px -1px #00000030;
+  }
+
+/*********** Blog Page *********/
+.breadcrumb a{
+    text-decoration: none;
+    color: rgba(33, 37, 41, 0.75);
+}
+
+.blog-links:hover{
+    color: #000 ;
+}
+
+.badge:hover {
+    background-color: var(--color-accent) !important;
+}
+
+.share-section a {
+    text-decoration: none;
+}
+
+.share-links a:hover{
+    color: #000;
+}
+
+/****** Comment Section *******/
+
+.user-image{
+    width: var(--user-image-comment);
+    border: var(--user-img-border);
+}
+
+.comment-answer{
+    padding-left: calc(var(--user-image-comment));
+}
+.comment{
+    margin-bottom: calc(var(--user-image-comment)/1.2);
+    padding-left: calc(var(--user-image-comment)/2);
+}
+.username-comment{
+    padding-left: calc(var(--user-image-comment)*1.2);
+}
+.comment-pl{
+    padding: 5px 5px 5px calc(var(--user-image-comment)/1.5);
+    
+}
+
+.comment-section a{
+    text-decoration: none;
+}
+
+.list-unstyled a{
+    text-decoration: none;
+}
+
+.reply:hover{
+    color: #000;
+}
+
+/***************/
+
+.blog-img{
+    max-width:var(--blog-img-maxwidth);
+    min-width: 40px;
+    min-height: 50px;
+}
+
+/********* Pagination ***********/
+.pagination a{
+    background-color: var(--bs-bg-secondary);
+    color: white;
+    font-weight: 700;
+}
+.pagination a:hover{
+    background-color: var(--color-accent);
+    color: white;
+    
+}
+
+/******* contacts ********/
+
+.map{
+    height: 500px;
+    border: 0;
+}
+
+.btn-primary-darker{
+    background-color: var(--color-primary-darker) !important;
+    box-shadow: var(--btn-primary-darker-shadow);
+}
+.btn-primary-darker:hover{
+    background-color: var(--color-accent) !important;
+    box-shadow: var(--btn-accent-shadow);
+}
+
+
+/******* aside section *******/
+.aside a:hover{
+    color: #000;
+}
+
+
+
+.submit-btn:hover{
+    color: #000 !important;
+}
